@@ -1,7 +1,7 @@
 import express from 'express';
 
 const app = express();
-const port = 8000;
+const PORT = 8000;
 
 app.use(express.json());
 
@@ -9,6 +9,6 @@ app.get('/', (req, res) => {
 	res.send('Hello from the Sportz server!');
 });
 
-app.listen(port, () => {
-	console.log(`Server listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+	console.log(`Server listening at http://localhost:${PORT}`);
 });
